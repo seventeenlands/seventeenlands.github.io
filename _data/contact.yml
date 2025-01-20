@@ -1,0 +1,20 @@
+- type: web
+  icon: "fa-solid fa-globe"
+  noblank: true
+  url: "https://www.17lands.com"
+
+- type: discord
+  icon: "fa-brands fa-discord"
+  url: "https://discord.gg/7XR7Xvd7ej"
+
+- type: twitter
+  icon: "fa-brands fa-x-twitter"
+
+- type: bluesky
+  icon: 'fa-brands fa-bluesky'
+  url: "https://bsky.app/profile/17lands.bsky.social"
+
+- type: download
+  icon: "fa-solid fa-download"
+  url: "https://www.17lands.com/getting_started"
+  
