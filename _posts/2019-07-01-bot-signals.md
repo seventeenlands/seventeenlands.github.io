@@ -3,7 +3,7 @@ layout: post
 title:  "Do the Bots Send Signals?"
 date:   2019-07-01
 tags: quickdraft bots draft signals
-author: R. Conroy
+author: rconroy293
 ---
 
 Draft is often cited as the biggest test of skills for a Magic player, as there are three distinct areas where a drafter must excel in order to do well: drafting, deckbuilding, and playing. With the advent of Arena, “the bots” have disrupted the drafting component significantly. In this post, we’ll try to explore how bots affect the way we draft, backed up by data from real Arena and Magic Online drafts.
@@ -59,13 +59,13 @@ And so on through the end of the pack. The total for blue throughout pack one co
 
 The chart below shows these values for all the WAR Magic Online drafts submitted to Magic Pro Tools. Each draft has five data points: one for each color. The x-axis represents the total power level throughout pack one, while the y-axis represents the total for that same color seen throughout pack three.
 
-![Open Lane Benefit: MTGO](/images/posts/2019-07-01-bot-signals/open-lane-mtgo.png)
+![Open Lane Benefit: MTGO](/assets/img/posts/2019-07-01-bot-signals/open-lane-mtgo.png)
 
 The positive slope demonstrates what we intuited before: there is a definite benefit to identifying the open colors in a draft! If you consistently get passed good cards in a color in pack one, on average you’ll see much better cards in the third pack in that color. This isn’t guaranteed, though. Other drafters could switch colors, or the cards could just be weaker in pack three.
 
 Below is a similar plot using Arena drafts with the bots’ valuations.
 
-![Open Lane Benefit: Arena](/images/posts/2019-07-01-bot-signals/open-lane-arena.png)
+![Open Lane Benefit: Arena](/assets/img/posts/2019-07-01-bot-signals/open-lane-arena.png)
 
 We see a similar trend, indicating that the Arena bots mirror the behavior of real drafters. In this case, the slope is even steeper, indicating there may be **more** value to reading signals drafting with the Arena bots than with humans! If the bots send signals like humans, though, why does drafting against the Arena bots feel different from drafting against humans?
 
@@ -77,7 +77,7 @@ The most obvious difference in drafting with bots is that their pick order is di
 
 Another key insight is that the bots are much stricter with their pick order than the variety of humans who draft. Looking at the variance of how late cards are seen across the pick order, this becomes clear:
 
-![Pick Position Variance](/images/posts/2019-07-01-bot-signals/pick-position-variance.png)
+![Pick Position Variance](/assets/img/posts/2019-07-01-bot-signals/pick-position-variance.png)
 
 The first thing to note from this graph is that there are quite a few cards with zero variance - there are 18 rares and mythics that the Arena bots have never passed in the hundreds of drafts recorded, even in the third pack when it's not in their colors. This compares to only four cards never passed in the sample of Magic Online drafts. There are three reasons someone might take a card that they're not going to play: they can sell it, they need it outside of the draft, or they’re hate drafting. Because there’s no secondary market on Arena, the first reason wouldn’t apply, so we would expect less of this behavior, not more.
 
