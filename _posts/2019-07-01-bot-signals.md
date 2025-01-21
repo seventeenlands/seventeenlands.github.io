@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mtg-post
 title:  "Do the Bots Send Signals?"
 date:   2019-07-01
 tags: quickdraft bots draft signals
@@ -20,13 +20,13 @@ In Arena, humans draft against seven automated draft bots. Because the bots only
 
 Because players aren’t allowed to communicate during a draft, the only way for a player to know what colors their opponent is drafting is to infer that information from the cards being passed. The simplest solution might be to count the number of cards in each color, but there's a lot of variance in that. Instead, we get better signal from the card strength. If the blue, white, and red cards being passed to a player in the first pack are consistently stronger than the green and black ones, it’s more likely that the person to their right is drafting green and black. But what do we mean by "stronger"?
 
-To evaluate strength, we need to understand how our neighbors value the cards. This is challenging to do unless we have lots of data to work with. With hundreds of drafts, we can identify the rating of cards based on how late we see each card in a pack on average. To illustrate with an example, let's look at *Invading Manticore* in [this draft](https://www.17lands.com/draft/e688e13849bf46bf9e3a7f07f8fa1242). Throughout the draft, we see it the following times:
+To evaluate strength, we need to understand how our neighbors value the cards. This is challenging to do unless we have lots of data to work with. With hundreds of drafts, we can identify the rating of cards based on how late we see each card in a pack on average. To illustrate with an example, let's look at <auto-card>Invading Manticore</auto-card> in [this draft](https://www.17lands.com/draft/e688e13849bf46bf9e3a7f07f8fa1242). Throughout the draft, we see it the following times:
 
 - Pack 1 pick 1
 - Pack 1 pick 9 (indicating no one took this picks 2 through 8)
 - Pack 3 pick 7
 
-For any card that wheels (i.e. we see it again when the pack comes back around), we ignore the first time we saw it. Using just the data from the draft above, the “average available position” for *Invading Manticore* would be 8.0. Averaging across all the WAR drafts shared using 17Lands, the actual number for *Invading Manticore* with the Arena bots is 7.6. We also have data from hundreds of Magic Online drafts with human drafters to compare to, provided by [Magic Pro Tools](https://magicprotools.com/). Averaging across those human drafters, that number for *Invading Manticore* is 6.2. A great card like *Spark Harvest* is usually only available in the first couple of picks, and its number is 3.0.
+For any card that wheels (i.e. we see it again when the pack comes back around), we ignore the first time we saw it. Using just the data from the draft above, the “average available position” for <auto-card>Invading Manticore</auto-card> would be 8.0. Averaging across all the WAR drafts shared using 17Lands, the actual number for <auto-card>Invading Manticore</auto-card> with the Arena bots is 7.6. We also have data from hundreds of Magic Online drafts with human drafters to compare to, provided by [Magic Pro Tools](https://magicprotools.com/). Averaging across those human drafters, that number for <auto-card>Invading Manticore</auto-card> is 6.2. A great card like <auto-card>Spark Harvest</auto-card> is usually only available in the first couple of picks, and its number is 3.0.
 
 To turn this “average available position” into a number representing the strength of the cards being passed, we scale this number to be between 0 (lowest valued) and 1 (highest valued), and then square it to account for good cards being significantly more valuable than mediocre cards. The table below shows this value for a sample of *War of the Spark* cards for Arena drafts logged on 17Lands between May 9 (the most recent announced update to the bots) and June 20 and from the sample of MTGO drafts uploaded to Magic Pro Tools.
 
@@ -50,10 +50,10 @@ We can’t interpret the power level of colors in any one pack to be fully indic
 To evaluate the benefit to finding the open colors, we’ll need a methodical way for doing so. For each color, we take the sum of the maximum-valued card in each pack of that color (we’ll split the value of multicolor cards evenly across their colors). Let's take blue in [this draft](https://magicprotools.com/draft/show?id=YToekpZPp1IRG81NMS4ZWbFcsmA) as an example.
 
 - Pick 1 isn’t passed to us, so we don’t value it.
-- P1P2, *Tamiyo, Collector of Tales* adds 0.36 (because it is two colors, we split
-- P1P3, *Eternal Skylord* adds 0.79, bringing our total to 1.14.
-- P1P4, *Thunder Drake* adds 0.52. Total is 1.66.
-- P1P5, *Tamiyo’s Epiphany* adds 0.49, putting the total at 2.15.
+- P1P2, <auto-card>Tamiyo, Collector of Tales</auto-card> adds 0.36 (because it is two colors, we split
+- P1P3, <auto-card>Eternal Skylord</auto-card> adds 0.79, bringing our total to 1.14.
+- P1P4, <auto-card>Thunder Drake</auto-card> adds 0.52. Total is 1.66.
+- P1P5, <auto-card>Tamiyo’s Epiphany</auto-card> adds 0.49, putting the total at 2.15.
 
 And so on through the end of the pack. The total for blue throughout pack one comes out to about 3.26. In pack three, following the same logic, the total is about 3.62.
 
@@ -71,7 +71,7 @@ We see a similar trend, indicating that the Arena bots mirror the behavior of re
 
 # Difference in Pick Order
 
-The most obvious difference in drafting with bots is that their pick order is different. When bots overvalue cards like *Giant Growth*, drafters don’t have a chance to take it where they feel it should be going, and as a result it’s almost never seen in draft play on Arena. It is hard to notice the absence of something, though, and it not being there in any one draft isn’t that odd. What sticks out like a sore thumb, though, is when cards go way later than they should. There have been some extreme examples in past sets, like *Gate Colossus* and *Sauroform Hybrid* in RNA. Since the latest update to the bots, the examples in WAR aren’t quite so bad, but *Lazotep Plating* and *Dreadmalkin* are a couple that still seem to stick out.
+The most obvious difference in drafting with bots is that their pick order is different. When bots overvalue cards like <auto-card>Giant Growth</auto-card>, drafters don’t have a chance to take it where they feel it should be going, and as a result it’s almost never seen in draft play on Arena. It is hard to notice the absence of something, though, and it not being there in any one draft isn’t that odd. What sticks out like a sore thumb, though, is when cards go way later than they should. There have been some extreme examples in past sets, like <auto-card>Gate Colossus</auto-card> and <auto-card>Sauroform Hybrid</auto-card> in RNA. Since the latest update to the bots, the examples in WAR aren’t quite so bad, but <auto-card>Lazotep Plating</auto-card> and <auto-card>Dreadmalkin</auto-card> are a couple that still seem to stick out.
 
 # Pick Order Variance
 
@@ -81,7 +81,7 @@ Another key insight is that the bots are much stricter with their pick order tha
 
 The first thing to note from this graph is that there are quite a few cards with zero variance - there are 18 rares and mythics that the Arena bots have never passed in the hundreds of drafts recorded, even in the third pack when it's not in their colors. This compares to only four cards never passed in the sample of Magic Online drafts. There are three reasons someone might take a card that they're not going to play: they can sell it, they need it outside of the draft, or they’re hate drafting. Because there’s no secondary market on Arena, the first reason wouldn’t apply, so we would expect less of this behavior, not more.
 
-The other thing to note from this graph is that across the entire pick order, the variance is lower. This indicates that the bots likely have a very strict pick order within each color, and they stick to it throughout the draft. Not only do different human drafters have different valuations of the cards, but even an individual drafter’s pick order will change throughout the draft to fill in holes in their deck. For example, someone might be light on two-drops and take *Kronch Wrangler* over *Bloom Hulk* later in the draft, even though the latter is a better card in a vacuum. Given the data presented, though, it’s unlikely the bots make these sorts of in-draft adjustments.
+The other thing to note from this graph is that across the entire pick order, the variance is lower. This indicates that the bots likely have a very strict pick order within each color, and they stick to it throughout the draft. Not only do different human drafters have different valuations of the cards, but even an individual drafter’s pick order will change throughout the draft to fill in holes in their deck. For example, someone might be light on two-drops and take <auto-card>Kronch Wrangler</auto-card> over <auto-card>Bloom Hulk</auto-card> later in the draft, even though the latter is a better card in a vacuum. Given the data presented, though, it’s unlikely the bots make these sorts of in-draft adjustments.
 
 # Self-Correction
 
