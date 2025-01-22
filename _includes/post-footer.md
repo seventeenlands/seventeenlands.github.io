@@ -1,0 +1,1 @@
+Do you want to help contribute data for analyses like these in the future? Check out our <a href="https://www.17lands.com/getting_started" target="_blank">Getting Started</a> page to install the lightweight Arena tracker and get access to all of our deck, draft, and gameplay tracking!

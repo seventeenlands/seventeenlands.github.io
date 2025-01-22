@@ -12,4 +12,4 @@ The site should then be available at [http://localhost:4000](http://localhost:40
 
 ## License
 
-The [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy/wiki) and all associated styling of the site is published under [MIT][https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE] License. Content in the `_posts/` directory is copyright 17Lands, LLC.
+The [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy/wiki) and all associated styling of the site is published under [MIT](https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE) License. Content in the `_posts/` directory is copyright 17Lands, LLC.
