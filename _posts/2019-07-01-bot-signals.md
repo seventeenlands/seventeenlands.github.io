@@ -1,5 +1,5 @@
 ---
-layout: mtg-post
+layout: post
 title:  "Do the Bots Send Signals?"
 date:   2019-07-01
 tags: quickdraft bots draft signals
