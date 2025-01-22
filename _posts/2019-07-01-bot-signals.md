@@ -2,8 +2,8 @@
 layout: post
 title:  "Do the Bots Send Signals?"
 date:   2019-07-01
-tags: quickdraft bots draft signals
-author: rconroy293
+tags:   quickdraft bots draft signals
+author: viralmisnomer
 ---
 
 Draft is often cited as the biggest test of skills for a Magic player, as there are three distinct areas where a drafter must excel in order to do well: drafting, deckbuilding, and playing. With the advent of Arena, “the bots” have disrupted the drafting component significantly. In this post, we’ll try to explore how bots affect the way we draft, backed up by data from real Arena and Magic Online drafts.
@@ -113,4 +113,3 @@ There’s a lot we can learn about how to best draft in Arena by looking at data
 
 ---
 
-Do you want to help contribute data for analyses like these in the future? Check out our [Getting Started](https://www.17lands.com/getting_started) page to install the lightweight Arena tracker and get access to the draft and deck viewers!
