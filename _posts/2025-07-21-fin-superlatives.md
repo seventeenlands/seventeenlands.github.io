@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deck Superlative Awards: Final Fantasy"
-date:   2025-07-18
+date:   2025-07-21
 tags:   superlatives fin
 author: viralmisnomer
 ---
