@@ -8,7 +8,7 @@ author: viralmisnomer
 
 It's time for the start of a new series: Deck Superlatives! For this series, we're giving awards to some Premier Draft trophy decks that wound up on the extreme end of some metrics. This is just meant as a fun way to highlight some interesting decks that were submitted to 17Lands, and not as a way to say that these are the best or worst decks.
 
-_For the first three awards, all submitted trophy decks are eligible, so long as they used the same deck list for all their games. For the next three awards, which utilize [our similarity search functionality](/posts/similarity-search/), only decks decks submitted by Patrons are eligible._
+_For the first three awards, all submitted trophy decks are eligible, so long as they used the same deck list for all their games. For the next three awards, which utilize [our similarity search functionality](/posts/similarity-search/), only decks decks submitted by [Patrons](https://www.patreon.com/17Lands) are eligible._
 
 _MTGA account names are listed for deck owners who have "visible on public pages" selected on their [17Lands account settings page](https://www.17lands.com/account)._
 
