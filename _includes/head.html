@@ -124,8 +124,80 @@
 
   {% include metadata-hook.html %}
 
-  <!--Autocard-->
+  <!--Autocard (legacy, used in older posts)-->
   <link rel="stylesheet" href="https://mtgify.org/dist/autocard.css" />
   <script src="https://mtgify.org/dist/autocard.js"></script>
-  
+
+  <!--Scryfall autocard (live Scryfall API, current set coverage)-->
+  <script src="{{ '/assets/js/autocard.js' | relative_url }}?v=1"></script>
+
+  <!--Mana pip custom elements: <p-w>, <p-wb splash>, etc.-->
+  <script src="{{ '/assets/js/mana-pips.js' | relative_url }}?v=1"></script>
+
+  <!--Zen of Python hover tooltip-->
+  <script src="{{ '/assets/js/zen-hover.js' | relative_url }}?v=1" defer></script>
+
+  <!--Mana Font-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mana-font@latest/css/mana.min.css" />
+
+  <style>
+    .deck-caption {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      margin-top: -1.5em;
+      margin-bottom: 1em;
+      gap: .5rem;
+    }
+    .deck-caption-prev { padding-left: 3rem; }
+    .deck-caption-now { text-align: center; }
+    .deck-caption-link { text-align: right; padding-right: 3rem; }
+
+    .deck-caption-unchanged { grid-template-columns: 1fr auto 1fr; }
+    .deck-caption-label { grid-column: 2; text-align: center; }
+
+    .mobile-br { display: none; }
+
+    .zen-hover {
+      border-bottom: 1px dotted currentColor;
+      cursor: help;
+    }
+    .zen-tooltip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      max-width: min(720px, calc(100vw - 24px));
+      padding: 1rem 1.25rem;
+      background: var(--card-bg, #2a2a2e);
+      color: var(--text-color, #e8e8e8);
+      border: 1px solid rgba(127, 127, 127, 0.25);
+      border-radius: 8px;
+      font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+      font-size: 0.82rem;
+      line-height: 1.55;
+      white-space: pre;
+      overflow-x: auto;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+      z-index: 9999;
+    }
+    .zen-tooltip-visible { display: block; }
+
+    @media (max-width: 650px) {
+      .deck-caption {
+        grid-template-columns: 1fr 1fr;
+        margin-top: -0.5em;
+        gap: .25rem;
+        font-size: .9em;
+      }
+      .deck-caption-prev { padding-left: 0; text-align: left; }
+      .deck-caption-now { text-align: right; }
+      .deck-caption-link { display: none; }
+      .deck-caption-unchanged { grid-template-columns: 1fr; }
+      .deck-caption-label { grid-column: 1; text-align: center; }
+      .prompt-info[style*="1.2em"] { font-size: 1em !important; }
+      .mobile-br { display: initial; }
+    }
+  </style>
+
 </head>

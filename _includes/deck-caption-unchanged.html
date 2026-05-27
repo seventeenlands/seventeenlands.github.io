@@ -1,0 +1,2 @@
+{%- assign chars = include.colors | split: "" -%}
+<div class="deck-caption deck-caption-unchanged"><div class="deck-caption-label">Unchanged:&nbsp;{%- for c in chars -%}{%- assign lower = c | downcase -%}{%- if c == lower -%}<i class="ms ms-{{ lower }} ms-cost" style="font-size:.7em"></i>{%- else -%}<i class="ms ms-{{ lower }} ms-cost"></i>{%- endif -%}{%- endfor -%}</div><div class="deck-caption-link"><a href="{{ include.url }}" target="_blank" rel="noopener noreferrer">Decklist&nbsp;↗</a></div></div>
