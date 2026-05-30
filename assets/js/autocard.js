@@ -81,7 +81,7 @@
     const seen = new Set();
     document.querySelectorAll('scryfall-card').forEach((el) => {
       const a = el.querySelector('a');
-      const name = (a ? a.textContent : el.textContent).trim();
+      const name = (el.getAttribute('name') || (a ? a.textContent : el.textContent)).trim();
       if (name && !seen.has(name)) {
         seen.add(name);
         names.push(name);
@@ -124,10 +124,11 @@
 
     _init() {
       if (this._initialized) return;
-      const name = this.textContent.trim();
+      const display = this.textContent.trim();
+      const name = (this.getAttribute('name') || display).trim();
       if (!name) return;
       const a = document.createElement('a');
-      a.textContent = name;
+      a.textContent = display || name;
       a.href = 'https://scryfall.com/search?q=' + encodeURIComponent('!"' + name + '"');
       a.target = '_blank';
       a.rel = 'noopener noreferrer';

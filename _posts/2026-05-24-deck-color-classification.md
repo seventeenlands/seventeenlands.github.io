@@ -20,7 +20,7 @@ Deck color labels aren't just cosmetic: they decide how your draft is categorize
 ![URbg → UR](/assets/img/posts/2026-05-24-deck-color-classification/deck-color-issues.png)
 {% include deck-caption.html prev="URbg" now="UR" url="https://www.17lands.com/deck/3eed8ff9699c4e208e7ddcf5a480b492/0" %}
 
-Take this [ECL deck](https://www.17lands.com/deck/3eed8ff9699c4e208e7ddcf5a480b492/) for example, playing only Islands/Mountains, featuring <scryfall-card>Deceit</scryfall-card> and <scryfall-card>Tam, Mindful First-Year</scryfall-card>.<br>This was previously labeled as <b>URbg</b>. Hybrids were counted as both colors, and a single treasure-making source in <scryfall-card>Flameking Gildweaver</scryfall-card> was enough to consider them as splashes.
+Take this [ECL deck](https://www.17lands.com/deck/3eed8ff9699c4e208e7ddcf5a480b492/) for example, playing only Islands/Mountains, featuring <scryfall-card>Deceit</scryfall-card> and <scryfall-card name="Tam, Mindful First-Year">Tam</scryfall-card>.<br>This was previously labeled as <b>URbg</b>. Hybrids were counted as both colors, and a single treasure-making source in <scryfall-card>Flamekin Gildweaver</scryfall-card> was enough to consider them as splashes.
 
 ## #1. Hybrids pick one color
 
@@ -36,7 +36,7 @@ This [UG deck](https://www.17lands.com/deck/70961870953f464885d0ec5fe5179b63/0) 
 ![WBGr → WGb](/assets/img/posts/2026-05-24-deck-color-classification/1-hybrids-with-ability.png)
 {% include deck-caption.html prev="WBGr" now="WGb" url="https://www.17lands.com/deck/688e3fec6e584523982a621de6d3a117/0" %}
 
-A subtler case in this [GW deck](https://www.17lands.com/deck/688e3fec6e584523982a621de6d3a117/0): <scryfall-card>Taster of Wares</scryfall-card> is a genuine <p-b splash></p-b> splash. The <p-rw splash></p-rw> hybrid is handled by the previous fix, so red is no longer a splash enabled by the any-color mana producer. The <p-wb splash></p-wb> hybrid commits to white given the mana base. Finally, two copies of <scryfall-card>Trystan, Callous Cultivator</scryfall-card> with a black activated ability backed by a Swamp. Together that used to look like a main black, but now reads as a 3-card black splash.
+A subtler case in this [GW deck](https://www.17lands.com/deck/688e3fec6e584523982a621de6d3a117/0): <scryfall-card>Taster of Wares</scryfall-card> is a genuine <p-b splash></p-b> splash. The <p-rw splash></p-rw> hybrid is handled by the previous fix, so red is no longer a splash enabled by the any-color mana producer. The <p-wb splash></p-wb> hybrid commits to white given the mana base. Finally, two copies of <scryfall-card name="Trystan, Callous Cultivator">Trystan</scryfall-card> with a black activated ability backed by a Swamp. Together that used to look like a main black, but now reads as a 3-card black splash.
 
 But what if you were playing a card like Trystan without expecting to use its ability?
 
@@ -45,7 +45,7 @@ But what if you were playing a card like Trystan without expecting to use its ab
 ![URg → UR](/assets/img/posts/2026-05-24-deck-color-classification/2-abilities.png)
 {% include deck-caption.html prev="URg" now="UR" url="https://www.17lands.com/deck/337a98e4cd854558b3d75985998bd37e/0" %}
 
-This [UR deck](https://www.17lands.com/deck/337a98e4cd854558b3d75985998bd37e/) is playing <scryfall-card>Oko, Lorwyn Liege</scryfall-card> which has a <p-g splash></p-g> activated ability, but not a single Forest. While the deck can _technically_ activate it using Treasures or <scryfall-card>Foraging Wickermaw</scryfall-card>, we decided it was better to recognize <b>commitment to splashing</b> the card by playing a land of the required color instead of relying on conditional sources.
+This [UR deck](https://www.17lands.com/deck/337a98e4cd854558b3d75985998bd37e/) is playing <scryfall-card name="Oko, Lorwyn Liege">Oko</scryfall-card> which has a <p-g splash></p-g> activated ability, but not a single Forest. While the deck can _technically_ activate it using Treasures or <scryfall-card>Foraging Wickermaw</scryfall-card>, we decided it was better to recognize <b>commitment to splashing</b> the card by playing a land of the required color instead of relying on conditional sources.
 
 > **New Rule:** Ability splashes need a dedicated land.
 {: .prompt-info style="font-size:1.2em" }
@@ -64,7 +64,7 @@ Additionally, TMT featured a lot of off-color abilities and we were seeing decks
 ![WUBRG → UGwbr](/assets/img/posts/2026-05-24-deck-color-classification/2-abilities-promotion.png)
 {% include deck-caption.html prev="WUBRG" now="UGwbr" url="https://www.17lands.com/deck/846b2639715140ad8ec9c3a5612315ea/0" %}
 
-This [UG deck](https://www.17lands.com/deck/846b2639715140ad8ec9c3a5612315ea/0) plays four copies of <scryfall-card>Everything Pizza</scryfall-card>, which has a WUBRG activated ability, with <scryfall-card>Frog Butlers</scryfall-card> providing the off-color sources. Previously this would be treated as having 4 cards with WUBRG casting cost. Now, ability colors can splash but aren't considered for main color, so we consider <p-w splash></p-w><p-b splash></p-b><p-r splash></p-r> as splashes.
+This [UG deck](https://www.17lands.com/deck/846b2639715140ad8ec9c3a5612315ea/0) plays four copies of <scryfall-card>Everything Pizza</scryfall-card>, which has a WUBRG activated ability, with <scryfall-card>Frog Butler</scryfall-card> providing the off-color sources. Previously this would be treated as having 4 cards with WUBRG casting cost. Now, ability colors can splash but aren't considered for main color, so we consider <p-w splash></p-w><p-b splash></p-b><p-r splash></p-r> as splashes.
 
 > **New Rule:** Abilities don't count for main colors.
 {: .prompt-info style="font-size:1.2em" }
@@ -90,7 +90,7 @@ This rule was aimed mostly at cube, where it's more common to play cards with no
 ![BRwug → BR](/assets/img/posts/2026-05-24-deck-color-classification/3-sources-cube.png)
 {% include deck-caption.html prev="BRwug" now="BR" url="https://www.17lands.com/deck/0a71949184074ce6a10d838a83545a81/0" %}
 
-This [BR cube deck](https://www.17lands.com/deck/0a71949184074ce6a10d838a83545a81/0) plays <scryfall-card>Woodfall Primus</scryfall-card>, <scryfall-card>Torsten, Founder of Benalia</scryfall-card> and <scryfall-card>Sin, Spira's Punishment</scryfall-card>: heavy off-color creatures the deck plans to cheat into play, not hard-cast.<br> Take Woodfall Primus' <p-g splash></p-g><p-g splash></p-g><p-g splash></p-g>: <scryfall-card>Multiversal Passage</scryfall-card> is the deck's only green-producing land, covering one pip. The remaining two would need <b>four non-land green</b> sources and the deck has just <scryfall-card>Fable of the Mirror-Breaker</scryfall-card>. Same story for white and blue, so under the new rule all three splashes are dropped.
+This [BR cube deck](https://www.17lands.com/deck/0a71949184074ce6a10d838a83545a81/0) plays <scryfall-card>Woodfall Primus</scryfall-card>, <scryfall-card name="Torsten, Founder of Benalia">Torsten</scryfall-card> and <scryfall-card name="Sin, Spira's Punishment">Sin</scryfall-card>: heavy off-color creatures the deck plans to cheat into play, not hard-cast.<br> Take Woodfall Primus' <p-g splash></p-g><p-g splash></p-g><p-g splash></p-g>: <scryfall-card>Multiversal Passage</scryfall-card> is the deck's only green-producing land, covering one pip. The remaining two would need <b>four non-land green</b> sources and the deck has just <scryfall-card>Fable of the Mirror-Breaker</scryfall-card>. Same story for white and blue, so under the new rule all three splashes are dropped.
 
 ## How it all fits together
 
@@ -118,7 +118,7 @@ flowchart TD
 
 <br/>
 
-Beyond the three big rules, a handful of smaller cases also got cleaned up: lands with off-color abilities like <scryfall-card>Hanweir Battlements</scryfall-card> and <scryfall-card>Gavony Township</scryfall-card> now register as ability splashes, split cards like <scryfall-card>Life // Death</scryfall-card> where one half is uncastable get correctly classified, and multicolor cards like <scryfall-card>Atraxa, Grand Unifier</scryfall-card> are skipped entirely when uncastable instead of adding partial splashes.
+Beyond the three big rules, a handful of smaller cases also got cleaned up: lands with off-color abilities like <scryfall-card>Hanweir Battlements</scryfall-card> and <scryfall-card>Gavony Township</scryfall-card> now register as ability splashes, split cards like <scryfall-card>Life // Death</scryfall-card> where one half is uncastable get correctly classified, and multicolor cards like <scryfall-card name="Atraxa, Grand Unifier">Atraxa</scryfall-card> are skipped entirely when uncastable instead of adding partial splashes.
 {: style="font-size:0.9em" }
 
 ---
