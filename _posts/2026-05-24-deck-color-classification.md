@@ -20,7 +20,7 @@ Deck color labels aren't just cosmetic: they decide how your draft is categorize
 ![URbg → UR](/assets/img/posts/2026-05-24-deck-color-classification/deck-color-issues.png)
 {% include deck-caption.html prev="URbg" now="UR" url="https://www.17lands.com/deck/3eed8ff9699c4e208e7ddcf5a480b492/0" %}
 
-Take this [ECL deck](https://www.17lands.com/deck/3eed8ff9699c4e208e7ddcf5a480b492/) for example, playing only Islands/Mountains, featuring <scryfall-card>Deceit</scryfall-card> and <scryfall-card name="Tam, Mindful First-Year">Tam</scryfall-card>.<br>This was previously labeled as <b>URbg</b>. Hybrids were counted as both colors, and a single treasure-making source in <scryfall-card>Flamekin Gildweaver</scryfall-card> was enough to consider them as splashes.
+Take this [ECL deck](https://www.17lands.com/deck/3eed8ff9699c4e208e7ddcf5a480b492/) for example, playing only Islands/Mountains, featuring <scryfall-card>Deceit</scryfall-card> and <scryfall-card>Tam, Mindful First-Year</scryfall-card><br>This was previously labeled as <b>URbg</b>. Hybrids were counted as both colors, and a single treasure-making source in <scryfall-card>Flamekin Gildweaver</scryfall-card> was enough to consider them as splashes.
 
 ## #1. Hybrids pick one color
 

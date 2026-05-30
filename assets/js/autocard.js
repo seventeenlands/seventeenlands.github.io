@@ -119,6 +119,8 @@
 
   class AutoCard extends HTMLElement {
     connectedCallback() {
+      // Defer until parsed: during parsing child text isn't available yet, the DOMContentLoaded pass inits static cards.
+      if (document.readyState === 'loading') return;
       this._init();
     }
 
