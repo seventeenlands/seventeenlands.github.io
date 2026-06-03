@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Improving Deck Color Classification"
-date:   2026-05-24
+date:   2026-06-05
 tags:   deck-colors features
 author: mnoya
 mermaid: true
