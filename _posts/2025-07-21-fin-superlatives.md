@@ -14,7 +14,7 @@ _MTGA account names are listed for deck owners who have "visible on public pages
 
 # Villainous Wealth
 
-The <auto-card>Villainous Wealth</auto-card> award goes to the trophy deck with the most rares. We give a bit of a bump for mythics and an additional small edge to bonus sheet cards. The winner is [this deck](https://www.17lands.com/deck/056333cc711749c3b43c83fd21061cf7/0), which had a whopping 5 mythic rares, 3 normal rares, and a handful of good uncommons to boot:
+The <scryfall-card>Villainous Wealth</scryfall-card> award goes to the trophy deck with the most rares. We give a bit of a bump for mythics and an additional small edge to bonus sheet cards. The winner is [this deck](https://www.17lands.com/deck/056333cc711749c3b43c83fd21061cf7/0), which had a whopping 5 mythic rares, 3 normal rares, and a handful of good uncommons to boot:
 
 ![](/assets/img/posts/2025-07-21-fin-superlatives/highest-rarity.png)
 
@@ -24,7 +24,7 @@ A couple of runners-up in this category:
 
 # Vampire Spawn
 
-The <auto-card>Vampire Spawn</auto-card> award is for the opposite end of the spectrum: the trophy deck with the lowest overall rarity. The winner here is **mateo** with [this deck](https://www.17lands.com/deck/fd745d405d604e39bc3191b21df0c21d/0), which was the only deck to trophy with just two uncommons and the rest commons:
+The <scryfall-card>Vampire Spawn</scryfall-card> award is for the opposite end of the spectrum: the trophy deck with the lowest overall rarity. The winner here is **mateo** with [this deck](https://www.17lands.com/deck/fd745d405d604e39bc3191b21df0c21d/0), which was the only deck to trophy with just two uncommons and the rest commons:
 
 ![](/assets/img/posts/2025-07-21-fin-superlatives/lowest-rarity.png)
 
@@ -36,7 +36,7 @@ There were three runners-up with just three uncommons each:
 
 # Time Vault
 
-The <auto-card>Time Vault</auto-card> award goes to the grindiest trophy deck - the one that trophied with the most turns played. The winner is **kurisu** who played a staggering 132 turns with [this BR deck](https://www.17lands.com/deck/9e71d16910d644379d64f93443b1d932/0) across its nine games, including three 20-turn games!
+The <scryfall-card>Time Vault</scryfall-card> award goes to the grindiest trophy deck - the one that trophied with the most turns played. The winner is **kurisu** who played a staggering 132 turns with [this BR deck](https://www.17lands.com/deck/9e71d16910d644379d64f93443b1d932/0) across its nine games, including three 20-turn games!
 
 ![](/assets/img/posts/2025-07-21-fin-superlatives/most-turns.png)
 
@@ -47,7 +47,7 @@ A couple of runners-up in this category:
 
 # Jeskai Revelation
 
-Are these the best decks of the format? Our similarity search feature says they might be... The <auto-card>Jeskai Revelation</auto-card> award goes to the trophy deck with the highest average win rate of the decks in its neighborhood, i.e. the 20 most similar decks. In this case, we had three decks that trophied with a neighborhood win rate of 74%:
+Are these the best decks of the format? Our similarity search feature says they might be... The <scryfall-card>Jeskai Revelation</scryfall-card> award goes to the trophy deck with the highest average win rate of the decks in its neighborhood, i.e. the 20 most similar decks. In this case, we had three decks that trophied with a neighborhood win rate of 74%:
 
 [This rareless UR deck](https://www.17lands.com/deck/3e3db2e5008049c3bbd897cd78b6a4b4/0) by **Chord_O_Calls**:
 
@@ -64,7 +64,7 @@ Are these the best decks of the format? Our similarity search feature says they 
 
 # Epitaph Golem
 
-Conversely, the <auto-card>Epitaph Golem</auto-card> award goes to the trophy deck that played it on hard mode, having the lowest average win rate of the decks in its neighborhood. The winner here is **cftsoc** with [this UB+ deck](https://www.17lands.com/deck/62c54aa9fdcb450295fafbaec7ba801e/1) that managed to trophy despite its nearest neighbors having a win rate of just 35%:
+Conversely, the <scryfall-card>Epitaph Golem</scryfall-card> award goes to the trophy deck that played it on hard mode, having the lowest average win rate of the decks in its neighborhood. The winner here is **cftsoc** with [this UB+ deck](https://www.17lands.com/deck/62c54aa9fdcb450295fafbaec7ba801e/1) that managed to trophy despite its nearest neighbors having a win rate of just 35%:
 
 ![](/assets/img/posts/2025-07-21-fin-superlatives/low-neighborhood.png)
 
@@ -73,7 +73,7 @@ The runner-up in this category is **Darcanis** with this [BR deck](https://www.1
 
 # Ignoble Hierarch
 
-The <auto-card>Ignoble Hierarch</auto-card> award is for the trophy deck that's least similar to any other trophy deck we had recorded. The winner is **The Land Haver** with [this BGw deck](https://www.17lands.com/deck/3ed941449a2643ed8a231cec5f1185e4/0) with a distance of 6.56 to the nearest trophy deck.
+The <scryfall-card>Ignoble Hierarch</scryfall-card> award is for the trophy deck that's least similar to any other trophy deck we had recorded. The winner is **The Land Haver** with [this BGw deck](https://www.17lands.com/deck/3ed941449a2643ed8a231cec5f1185e4/0) with a distance of 6.56 to the nearest trophy deck.
 
 ![](/assets/img/posts/2025-07-21-fin-superlatives/least-similar.png)
 
